@@ -67,7 +67,26 @@
 	padding: 0;
 	font-family: "WorkSans";
 }
-
+input:focus {
+	outline: none;
+}
+.password__error {
+	visibility: hidden;
+	color: #ff2828;
+	font-family: "WorkSans";
+	font-size: 12;
+	padding-left: 5px;
+	width: 100%;
+}
+.rePassword__error {
+	visibility: hidden;
+	color: #ff2828;
+	font-family: "WorkSans";
+	font-size: 12;
+	padding-left: 5px;
+	margin-bottom: 7%;
+	transition: all 0.2s;
+}
 .content {
 	height: 480px;
 	display: flex;
@@ -139,7 +158,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-content: start;
 	gap: 5px;
 	color: #7c7c7c;
@@ -223,13 +242,13 @@ input[type="radio"] {
 input[type="date"] {
 	display: none;
 }
-img.email__uncheck{
+img.email__uncheck {
 	display: none;
-width: 11px;
-height: 8px;
-position: absolute;
-right: 0;
-top: 28px;
+	width: 11px;
+	height: 8px;
+	position: absolute;
+	right: 0;
+	top: 28px;
 }
 .page__footer {
 	display: flex;
