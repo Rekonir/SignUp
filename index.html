@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SignUp</title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="sideBoard">
+				<h1 class="sideBoard__header">Sign up</h1>
+			</div>
+			<div class="page">
+				<div class="page__headerBox">
+					<h2 class="page__header">New user?</h2>
+					<h3 class="page__subheader">
+						Use the form below to create your account.
+					</h3>
+				</div>
+				<div class="registrationBox">
+					<div class="registrationBox__inputsBox">
+						<div class="input__box">
+							First Name
+							<input
+								type="text"
+								name="First Name"
+								id="First Name"
+								placeholder="Enter your First Name"
+							/>
+						</div>
+						<div class="input__box">
+							Last Name
+							<input
+								type="text"
+								name="Last Name"
+								id="Last Name"
+								placeholder="Enter your Last Name"
+							/>
+						</div>
+						<div class="input__box">
+							Nationality
+							<select name="Nationality">
+								<option value="British">British</option>
+								<option value="French">French</option>
+								<option value="German">German</option>
+								<option value="Greek">Greek</option>
+								<option value="Spanish">Spanish</option>
+								<option value="Russian">Russian</option>
+								<option value="American">American</option>
+							</select>
+						</div>
+						<div class="input__box">
+							E-mail
+							<input
+								type="email"
+								name="E-mail"
+								id="E-mail"
+								placeholder="Enter your E-mail"
+							/>
+						</div>
+						<div class="input__box">
+							Date of Birth <input type="date" name="Date" id="Date" />
+						</div>
+						<div class="input__gender">
+							<label for="Male">
+								<input type="radio" id="Male" name="Gender" /> Male
+							</label>
+							<label for="Female">
+								<input type="radio" id="Female" name="Gender" /> Female
+							</label>
+						</div>
+						<div class="input__box">
+							Password
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Enter your password"
+							/>
+						</div>
+						<div class="input__box">
+							Confirm Password
+							<input
+								type="password"
+								name="Confirm Password"
+								id="Confirm Password"
+								placeholder="Confirm your password"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="page__footer">
+					<div class="footer__subheaderBox">
+						<h3 class="page__subheader">Have an account?</h3>
+						<a href="#" class="login"> Login </a>
+					</div>
+					<button class="registrationBtn">Complete Signup</button>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
