@@ -136,6 +136,7 @@
 	gap: 16px;
 }
 .input__box {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -222,10 +223,13 @@ input[type="radio"] {
 input[type="date"] {
 	display: none;
 }
-input[type="email"]::after {
-	content:'';
-	height: 100%;
-	background-image: ;
+img.email__uncheck{
+	display: none;
+width: 11px;
+height: 8px;
+position: absolute;
+right: 0;
+top: 28px;
 }
 .page__footer {
 	display: flex;
