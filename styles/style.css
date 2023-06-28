@@ -3,7 +3,7 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url("../assets/fonts/PT_Sans/PTSans-Bold.ttf") format("ttf");
+	src: url("/assets/fonts/PT_Sans/PTSans-Bold.ttf") format("ttf");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 	font-family: "PT Sans";
 	font-style: italic;
 	font-weight: 700;
-	src: url("../assets/fonts/PT_Sans/PTSans-BoldItalic.ttf") format("ttf");
+	src: url("/assets/fonts/PT_Sans/PTSans-BoldItalic.ttf") format("ttf");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 300;
-	src: url("../assets/fonts/PT_Sans/PTSans-Italic.ttf") format("ttf");
+	src: url("/assets/fonts/PT_Sans/PTSans-Italic.ttf") format("ttf");
 }
 
 @font-face {
@@ -27,14 +27,14 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 300;
-	src: url("../assets/fonts/PT_Sans/PTSans-Regular.ttf") format("ttf");
+	src: url("/assets/fonts/PT_Sans/PTSans-Regular.ttf") format("ttf");
 }
 @font-face {
 	font-display: swap;
 	font-family: "WorkSans";
 	font-style: normal;
 	font-weight: 700;
-	src: url("../assets/fonts/Work_Sans/static/WorkSans-Bold.ttf") format("ttf");
+	src: url("/assets/fonts/Work_Sans/static/WorkSans-Bold.ttf") format("ttf");
 }
 
 @font-face {
@@ -42,7 +42,8 @@
 	font-family: "WorkSans";
 	font-style: italic;
 	font-weight: 700;
-	src: url("../assets/fonts/Work_Sans/static/WorkSans-BoldItalic.ttf") format("ttf");
+	src: url("/assets/fonts/Work_Sans/static/WorkSans-BoldItalic.ttf")
+		format("ttf");
 }
 
 @font-face {
@@ -50,7 +51,7 @@
 	font-family: "WorkSans";
 	font-style: normal;
 	font-weight: 300;
-	src: url("../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf") format("ttf");
+	src: url("/assets/fonts/Work_Sans/static/WorkSans-Regular.ttf") format("ttf");
 }
 
 @font-face {
@@ -58,12 +59,13 @@
 	font-family: "WorkSans";
 	font-style: italic;
 	font-weight: 300;
-	src: url("../assets/fonts/Work_Sans/static/WorkSans-Italic.ttf") format("ttf");
+	src: url("/assets/fonts/Work_Sans/static/WorkSans-Italic.ttf") format("ttf");
 }
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: "WorkSans";
 }
 
 .content {
@@ -75,7 +77,7 @@
 	justify-content: start;
 }
 .sideBar {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans";
 	font-size: 49px;
 	font-weight: 400;
 	line-height: 63px;
@@ -119,6 +121,7 @@
 	line-height: 16px;
 	letter-spacing: 0px;
 	text-align: left;
+	font-weight: 300;
 }
 .registrationBox {
 	margin-top: 20px;
@@ -135,13 +138,15 @@
 .input__box {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-evenly;
 	align-content: start;
 	gap: 5px;
 	color: #7c7c7c;
 	font-size: 12px;
 	font-family: "WorkSans";
 	font-weight: 300;
+	padding-bottom: 6px;
+	border-bottom: 0.7px solid #f2f2f2;
 }
 input::placeholder {
 	color: #7c7c7c;
@@ -180,14 +185,33 @@ select {
 }
 label {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 	align-items: baseline;
 	gap: 6px;
 	cursor: pointer;
 	color: #111;
 	font-size: 14px;
 	font-family: "WorkSans";
+	padding: auto;
+}
+.radio__label {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #5a61ed;
+	border-radius: 50%;
+}
+input[type="radio"]:checked + .radio__label {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #5a61ed;
+	border-radius: 50%;
+	background: #5a61ed;
+	box-shadow: inset 0px 0px 0px 1.5px #fff;
+}
+
+input[type="radio"] {
+	display: none;
 }
 input[type="radio"] {
 	cursor: pointer;
@@ -197,6 +221,11 @@ input[type="radio"] {
 }
 input[type="date"] {
 	display: none;
+}
+input[type="email"]::after {
+	content:'';
+	height: 100%;
+	background-image: ;
 }
 .page__footer {
 	display: flex;
