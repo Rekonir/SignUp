@@ -3,19 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
 		<title>SignUp</title>
 	</head>
 	<body>
 		<div class="content">
-			<div class="sideBoard">
-				<h1 class="sideBoard__header">Sign up</h1>
+			<div class="sideBar">
+				<div class="sideBar__header">Sign up</div>
 			</div>
 			<div class="page">
 				<div class="page__headerBox">
-					<h2 class="page__header">New user?</h2>
-					<h3 class="page__subheader">
+					<h1 class="page__header">New user?</h1>
+					<h2 class="page__subheader">
 						Use the form below to create your account.
-					</h3>
+					</h2>
 				</div>
 				<div class="registrationBox">
 					<div class="registrationBox__inputsBox">
@@ -61,14 +62,18 @@
 						<div class="input__box">
 							Date of Birth <input type="date" name="Date" id="Date" />
 						</div>
-						<div class="input__gender">
-							<label for="Male">
-								<input type="radio" id="Male" name="Gender" /> Male
-							</label>
-							<label for="Female">
-								<input type="radio" id="Female" name="Gender" /> Female
-							</label>
+						<div class="input__box">
+							Gender
+							<div class="input__gender">
+								<label for="Male">
+									<input type="radio" id="Male" name="Gender" /> Male
+								</label>
+								<label for="Female">
+									<input type="radio" id="Female" name="Gender" /> Female
+								</label>
+							</div>
 						</div>
+
 						<div class="input__box">
 							Password
 							<input
@@ -88,15 +93,16 @@
 							/>
 						</div>
 					</div>
-				</div>
-				<div class="page__footer">
-					<div class="footer__subheaderBox">
-						<h3 class="page__subheader">Have an account?</h3>
-						<a href="#" class="login"> Login </a>
+					<div class="page__footer">
+						<div class="footer__subheaderBox">
+							<h2 class="page__subheader">Have an account?</h2>
+							<a href="#" class="login"> Login </a>
+						</div>
+						<button class="registrationBtn">Complete Signup</button>
 					</div>
-					<button class="registrationBtn">Complete Signup</button>
 				</div>
 			</div>
 		</div>
+		<script src="./main/main.js"></script>
 	</body>
 </html>
