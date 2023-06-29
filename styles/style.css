@@ -61,6 +61,102 @@
 	font-weight: 300;
 	src: url("/assets/fonts/Work_Sans/static/WorkSans-Italic.ttf") format("ttf");
 }
+
+@keyframes showName {
+	from {
+		opacity: 0;
+		transform: translateY(-50%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@-webkit-keyframes error-out-on-hover {
+	10% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	20% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	30% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	40% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	50% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg);
+	}
+	60% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	70% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg);
+	}
+	80% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	90% {
+		-webkit-transform: translateX(1px) rotate(0);
+		transform: translateX(1px) rotate(0);
+	}
+	100% {
+		-webkit-transform: translateX(-1px) rotate(0);
+		transform: translateX(-1px) rotate(0);
+	}
+}
+@keyframes error-out-on-hover {
+	10% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	20% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	30% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	40% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	50% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg);
+	}
+	60% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	70% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg);
+	}
+	80% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	90% {
+		-webkit-transform: translateX(1px) rotate(0);
+		transform: translateX(1px) rotate(0);
+	}
+	100% {
+		-webkit-transform: translateX(-1px) rotate(0);
+		transform: translateX(-1px) rotate(0);
+	}
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -178,6 +274,30 @@ input:focus {
 	padding-bottom: 6px;
 	border-bottom: 0.7px solid #f2f2f2;
 }
+.input__box:nth-child(1) {
+	animation: showName 1s;
+}
+.input__box:nth-child(2) {
+	animation: showName 2s;
+}
+.input__box:nth-child(3) {
+	animation: showName 3s;
+}
+.input__box:nth-child(4) {
+	animation: showName 4s;
+}
+.input__box:nth-child(5) {
+	animation: showName 5s;
+}
+.input__box:nth-child(6) {
+	animation: showName 6s;
+}
+.input__box:nth-child(7) {
+	animation: showName 7s;
+}
+.input__box:nth-child(8) {
+	animation: showName 8s;
+}
 input::placeholder {
 	color: #7c7c7c;
 	font-size: 16px;
@@ -230,6 +350,8 @@ label {
 	height: 12px;
 	border: 1px solid #5a61ed;
 	border-radius: 50%;
+	transition: all 0.5s;
+
 }
 input[type="radio"]:checked + .radio__label {
 	width: 12px;
@@ -238,6 +360,7 @@ input[type="radio"]:checked + .radio__label {
 	border-radius: 50%;
 	background: #5a61ed;
 	box-shadow: inset 0px 0px 0px 1.5px #fff;
+	transition: all 0.5s;
 }
 
 input[type="radio"] {
@@ -282,12 +405,22 @@ input[type="date"] {
 	font-family: PT Sans;
 	cursor: pointer;
 }
+.registrationBtn.errorBtn {
+	-webkit-animation-name: error-out-on-hover;
+	animation-name: error-out-on-hover;
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
 .back__avatar {
 	width: 411px;
 	height: 411px;
 	flex-shrink: 0;
 	position: absolute;
-	z-index:-1;
+	z-index: -1;
 	top: 125.52px;
 	left: 220.8px;
 }

@@ -26,10 +26,9 @@ let regForm = {
 let genderCheck = ''
 
 btn.addEventListener('click', () => {
-    page.style.display = 'none';
-    ty.style.display = 'flex';
-    // const birthday = `${day.value}/${month.value}/${year.value}`
+
     const birthday = new Date(year.value, month.value - 1, day.value);
+
     if (firstName.value.length !== 0 && lastName.value.length !== 0 && nationality.value.length !== 0 && email.value.length !== 0) {
         if (password.value.length >= 8 && /[A-Z]/.test(password.value) && /[a-z]/.test(password.value) && /[0-9]/.test(password.value)) {
             if (password.value === rePassword.value) {
@@ -57,10 +56,16 @@ btn.addEventListener('click', () => {
                     gender: "",
                     password: "",
                 };
+                page.style.display = 'none';
+                ty.style.display = 'flex';
                 btn.style.display = "none";
             }
         }
 
+    }
+    else {
+        btn.classList.add("errorBtn")
+        setTimeout(() => { btn.classList.remove("errorBtn") }, 750)
     }
 });
 
