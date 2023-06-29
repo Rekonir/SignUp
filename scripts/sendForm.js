@@ -57,7 +57,8 @@ btn.addEventListener('click', () => {
                     password: "",
                 };
                 page.style.display = 'none';
-                ty.style.display = 'flex';
+                ty.classList.add('ty__active');
+                ty.classList.remove('ty')
                 btn.style.display = "none";
             }
         }

@@ -1,57 +1,74 @@
 @media screen and (max-width: 320px) {
-    *{
-        font-size: 10px !important;
-        
-    }
-    p{
-        padding: 0 !important;
-    }
-    h1{
-        font-size: 12px !important;
-    }
-    .content{
-        min-height: 700px;
-    }
-    .registrationBox__inputsBox {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-    }
-    .input__gender {
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-    .page__footer {
-        flex-direction: column;
-    }
-    .footer__subheaderBox {
-        flex-direction: column;
-    }
-    .sideBar {
-        height: 100%;
-        max-width: 50px;
-    }
-    input::placeholder {
-        font-size: 6px;
-    }
-    .input__gender{
-        padding: 5px;
-    }
-    .rePassword__error{
-        font-size: 4px !important;
-    }
-    .password__error{
-        font-size: 4px !important;
-    }
-    .sideBar__header {
-        bottom: 50px;
-        right: 0px;
-        font-size: 12px !important;
-    }
+	* {
+		font-size: 10px !important;
+	}
+	p {
+		padding: 0 !important;
+	}
+	h1 {
+		font-size: 12px !important;
+	}
+	.content {
+		height: 700px;
 
-    .registrationBtn {
-        margin-top: 5px;
-        padding: 7px 7px;
-        font-size: 14px;
-    }
+		padding: 0px;
+	}
+	.ty__active {
+		height: 180px;
+		padding: 5px;
+	}
+	.ty__page {
+		padding: 0;
+		width: 100%;
+	}
+	.content:has(.ty__active) {
+		height: 180px;
+	}
+	.registrationBox__inputsBox {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 5px;
+	}
+	.input__gender {
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+	}
+	.page__footer {
+		flex-direction: column;
+	}
+	.footer__subheaderBox {
+		flex-direction: column;
+	}
+	.sideBar {
+		height: 100%;
+		max-width: 50px;
+	}
+	input::placeholder {
+		font-size: 6px;
+	}
+	.input__gender {
+		padding: 5px;
+	}
+	.rePassword__error {
+		font-size: 4px !important;
+	}
+	.password__error {
+		font-size: 4px !important;
+	}
+	.sideBar__header {
+		bottom: 70%;
+		right: 0px;
+		font-size: 12px !important;
+	}
+	.registrationBtn {
+		margin-top: 5px;
+		padding: 7px 7px;
+		font-size: 14px;
+	}
+	.back__avatar {
+		width: 100px;
+		height: 100px;
+		top: 190%;
+		left: 55%;
+	}
 }
