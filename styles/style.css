@@ -170,6 +170,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "WorkSans";
+	
 }
 input:focus {
 	outline: none;
@@ -341,6 +342,9 @@ input {
 	padding: 5px;
 	width: 100%;
 	border: 1px solid transparent;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .input__gender {
 	display: flex;
