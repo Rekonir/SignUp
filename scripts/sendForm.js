@@ -3,9 +3,9 @@ const firstName = document.getElementById('First Name');
 const lastName = document.getElementById('Last Name');
 const nationality = document.getElementById('Nationality');
 const email = document.getElementById('E-mail');
-const day = document.getElementsByClassName('show-placeholder')[0];
-const month = document.getElementsByClassName('show-placeholder')[1];
-const year = document.getElementsByClassName('show-placeholder')[2];
+const day = document.getElementById('day');
+const month = document.getElementById('month');
+const year = document.getElementById('year');
 
 const gender = document.getElementById('Gender');
 // const password = document.getElementById('Password');
@@ -24,13 +24,13 @@ let regForm = {
     password: "",
 };
 let genderCheck = ''
-console.log(day)
 
 btn.addEventListener('click', () => {
     page.style.display = 'none';
     ty.style.display = 'flex';
-
-    if (firstName.value.length !== 0 && lastName.value.length !== 0 && nationality.value.length !== 0 && email.value.length !== 0 && birthday.value.length !== 0) {
+    // const birthday = `${day.value}/${month.value}/${year.value}`
+    const birthday = new Date(year.value, month.value - 1, day.value);
+    if (firstName.value.length !== 0 && lastName.value.length !== 0 && nationality.value.length !== 0 && email.value.length !== 0) {
         if (passwordValue.length >= 8 && /[A-Z]/.test(passwordValue) && /[a-z]/.test(passwordValue) && /[0-9]/.test(passwordValue)) {
             if (password.value === rePassword.value) {
                 for (var i = 0; i < gender.length; i++) {
@@ -43,7 +43,7 @@ btn.addEventListener('click', () => {
                     lastName: lastName.value,
                     nationality: nationality.value,
                     email: email.value,
-                    birthday: birthday.value,
+                    birthday: birthday,
                     gender: genderCheck,
                     password: password.value,
                 };
