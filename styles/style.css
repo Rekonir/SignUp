@@ -252,13 +252,13 @@ input[type="radio"] {
 input[type="date"] {
 	display: none;
 }
-img.email__uncheck {
+.email__check {
 	display: none;
 	width: 11px;
 	height: 8px;
 	position: absolute;
 	right: 0;
-	top: 28px;
+	top: 32px;
 }
 .page__footer {
 	display: flex;
@@ -281,4 +281,13 @@ img.email__uncheck {
 	font-size: 14px;
 	font-family: PT Sans;
 	cursor: pointer;
+}
+.back__avatar {
+	width: 411px;
+	height: 411px;
+	flex-shrink: 0;
+	position: absolute;
+	z-index:-1;
+	top: 125.52px;
+	left: 220.8px;
 }
