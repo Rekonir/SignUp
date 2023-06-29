@@ -135,8 +135,14 @@ if (isAndroid) {
         dayOptions[parseInt(ymd[2], 10)].selected = true;
     }
 
-    dateFieldDay.addEventListener('change', dateChangeHandler);
-    dateFieldMonth.addEventListener('change', dateChangeHandler);
-    dateFieldYear.addEventListener('change', dateChangeHandler);
+
+    dateFieldDay.value = (currentDay < 10 ? '0' : '') + currentDay;
+    dateFieldMonth.value = (currentMonth < 9 ? '0' : '') + (currentMonth + 1);
+    dateFieldYear.value = currentYear;
+
+    dateFieldDay.options[0].disabled = true;
+    dateFieldMonth.options[0].disabled = true;
+    dateFieldYear.options[0].disabled = true;
+
     dateChangeHandler();
 }

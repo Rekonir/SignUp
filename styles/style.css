@@ -70,14 +70,14 @@
 input:focus {
 	outline: none;
 }
-.ty{
+.ty {
 	display: none;
 	height: 480px;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 28px 32px 22px 20px;
 }
-.ty__page{
+.ty__page {
 	margin: auto;
 	padding-left: 43px;
 }
@@ -128,7 +128,7 @@ input:focus {
 	max-width: 527px;
 	padding: 28px 32px 22px 20px;
 	height: 100%;
-	display: flex; 
+	display: flex;
 	flex-direction: column;
 }
 .page__header {
