@@ -11,6 +11,20 @@
 			<div class="sideBar">
 				<div class="sideBar__header">Sign up</div>
 			</div>
+			<div class="ty">
+				<div class="ty__page">
+					<h1 class="page__header">Thank You!</h1>
+					<h2 class="page__subheader">
+						you registered!
+					</h2>
+				</div>
+				<div class="page__footer">
+					<div class="footer__subheaderBox">
+						<h2 class="page__subheader">Have an account?</h2>
+						<a href="#" class="login"> Login </a>
+					</div>
+				</div>
+			</div>
 			<div class="page">
 				<div class="page__headerBox">
 					<h1 class="page__header">New user?</h1>
@@ -40,7 +54,7 @@
 						</div>
 						<div class="input__box">
 							<p class="input__header">Nationality</p>
-							<select name="Nationality">
+							<select name="Nationality" id="Nationality">
 								<option value="British">British</option>
 								<option value="French">French</option>
 								<option value="German">German</option>
@@ -67,6 +81,7 @@
 						<div class="input__box">
 							<p class="input__header">Gender</p>
 							<div class="input__gender">
+								<form id="Gender">
 								<label for="Male">
 									<input type="radio" id="Male" name="Gender" /> Male
 									<div class="radio__label"></div>
@@ -74,7 +89,9 @@
 								<label for="Female">
 									<input type="radio" id="Female" name="Gender" /> Female
 									<div class="radio__label"></div>
-								</label>
+								</label>	
+								</form>
+								
 							</div>
 						</div>
 
@@ -113,6 +130,7 @@
 		<script src="./scripts/dateInputs.js"/></script>
 		<script src="./scripts/emailCheked.js"/></script>
 		<script src="./scripts/checkPassword.js"/></script>
+		<script src="./scripts/sendForm.js"/></script>
 
 
 	</body>
