@@ -3,7 +3,7 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url("/assets/fonts/PT_Sans/PTSans-Bold.ttf") format("ttf");
+	src: url("../assets/fonts/PT_Sans/PTSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 	font-family: "PT Sans";
 	font-style: italic;
 	font-weight: 700;
-	src: url("/assets/fonts/PT_Sans/PTSans-BoldItalic.ttf") format("ttf");
+	src: url("../assets/fonts/PT_Sans/PTSans-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 300;
-	src: url("/assets/fonts/PT_Sans/PTSans-Italic.ttf") format("ttf");
+	src: url("../assets/fonts/PT_Sans/PTSans-Italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -27,14 +27,15 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 300;
-	src: url("/assets/fonts/PT_Sans/PTSans-Regular.ttf") format("ttf");
+	src: url("../assets/fonts/PT_Sans/PTSans-Regular.ttf") format("truetype");
 }
 @font-face {
 	font-display: swap;
 	font-family: "WorkSans";
 	font-style: normal;
 	font-weight: 700;
-	src: url("/assets/fonts/Work_Sans/static/WorkSans-Bold.ttf") format("ttf");
+	src: url("../assets/fonts/Work_Sans/static/WorkSans-Bold.ttf")
+		format("truetype");
 }
 
 @font-face {
@@ -42,8 +43,8 @@
 	font-family: "WorkSans";
 	font-style: italic;
 	font-weight: 700;
-	src: url("/assets/fonts/Work_Sans/static/WorkSans-BoldItalic.ttf")
-		format("ttf");
+	src: url("../assets/fonts/Work_Sans/static/WorkSans-BoldItalic.ttf")
+		format("truetype");
 }
 
 @font-face {
@@ -51,7 +52,8 @@
 	font-family: "WorkSans";
 	font-style: normal;
 	font-weight: 300;
-	src: url("/assets/fonts/Work_Sans/static/WorkSans-Regular.ttf") format("ttf");
+	src: url("../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf")
+		format("truetype");
 }
 
 @font-face {
@@ -59,7 +61,8 @@
 	font-family: "WorkSans";
 	font-style: italic;
 	font-weight: 300;
-	src: url("/assets/fonts/Work_Sans/static/WorkSans-Italic.ttf") format("ttf");
+	src: url("../assets/fonts/Work_Sans/static/WorkSans-Italic.ttf")
+		format("truetype");
 }
 
 @keyframes showName {
@@ -169,7 +172,7 @@ input:focus {
 .ty {
 	display: none;
 }
-.ty__active{
+.ty__active {
 	display: flex;
 	height: 480px;
 	flex-direction: column;
@@ -219,9 +222,12 @@ input:focus {
 }
 .sideBar__header {
 	position: absolute;
+	display: block;
+	width: 262px;
+	height: 63px;
 	transform: rotate(270deg);
-	bottom: 103px;
-	right: -40px;
+	bottom: 119.98px;
+	right: -97.3px;
 }
 .page {
 	max-width: 527px;
@@ -354,7 +360,6 @@ label {
 	border: 1px solid #5a61ed;
 	border-radius: 50%;
 	transition: all 0.5s;
-
 }
 input[type="radio"]:checked + .radio__label {
 	width: 12px;

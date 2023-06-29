@@ -1,5 +1,5 @@
 const password = document.getElementById('password')
-const rePassword = document.getElementById('Confirm Password')
+const rePassword = document.getElementById('ConfirmPassword')
 const errPassword = document.getElementsByClassName('password__error')[0]
 const errRePassword = document.getElementsByClassName('rePassword__error')[0]
 

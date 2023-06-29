@@ -1,6 +1,6 @@
 const btn = document.getElementsByClassName('registrationBtn')[0];
-const firstName = document.getElementById('First Name');
-const lastName = document.getElementById('Last Name');
+const firstName = document.getElementById('FirstName');
+const lastName = document.getElementById('LastName');
 const nationality = document.getElementById('Nationality');
 const email = document.getElementById('E-mail');
 const day = document.getElementById('day');
