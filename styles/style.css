@@ -1,3 +1,4 @@
+/* Подклюбчение шрифтов */
 @font-face {
 	font-display: swap;
 	font-family: "PT Sans";
@@ -64,7 +65,7 @@
 	src: url("../assets/fonts/Work_Sans/static/WorkSans-Italic.ttf")
 		format("truetype");
 }
-
+/* Анимация появляние инпутов */
 @keyframes showName {
 	from {
 		opacity: 0;
@@ -76,6 +77,8 @@
 		transform: translateY(0%);
 	}
 }
+/* Анимация вибрации кнопки */
+
 @-webkit-keyframes error-out-on-hover {
 	10% {
 		-webkit-transform: translateX(3px) rotate(2deg);
@@ -160,6 +163,8 @@
 		transform: translateX(-1px) rotate(0);
 	}
 }
+/* Ввод общих правил стиля*/
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -169,6 +174,8 @@
 input:focus {
 	outline: none;
 }
+/* блок после регистарции */
+
 .ty {
 	display: none;
 }
@@ -199,6 +206,8 @@ input:focus {
 	padding-left: 5px;
 	margin-bottom: 7%;
 }
+/* - Основная страница*/
+
 .content {
 	height: 480px;
 	display: flex;
@@ -207,6 +216,8 @@ input:focus {
 	align-items: start;
 	justify-content: start;
 }
+/* -- Боковая панель */
+
 .sideBar {
 	font-family: "PT Sans";
 	font-size: 49px;
@@ -229,6 +240,8 @@ input:focus {
 	bottom: 119.98px;
 	right: -97.3px;
 }
+/* -- Основная панель */
+
 .page {
 	max-width: 527px;
 	padding: 28px 32px 22px 20px;
@@ -236,6 +249,8 @@ input:focus {
 	display: flex;
 	flex-direction: column;
 }
+/* Чердах страницы */
+
 .page__header {
 	font-family: "WorkSans";
 	font-size: 22px;
@@ -257,6 +272,8 @@ input:focus {
 	text-align: left;
 	font-weight: 300;
 }
+/* Блок Инпутов */
+
 .registrationBox {
 	margin-top: 20px;
 	height: 100%;
@@ -283,6 +300,8 @@ input:focus {
 	padding-bottom: 6px;
 	border-bottom: 0.7px solid #f2f2f2;
 }
+/* Введение анимации инпутов */
+
 .input__box:nth-child(1) {
 	animation: showName 1s;
 }
@@ -307,6 +326,8 @@ input:focus {
 .input__box:nth-child(8) {
 	animation: showName 8s;
 }
+/* Стилизация инпутов */
+
 input::placeholder {
 	color: #7c7c7c;
 	font-size: 16px;
@@ -391,6 +412,8 @@ input[type="date"] {
 	right: 0;
 	top: 32px;
 }
+/* Стилизация "футера" */
+
 .page__footer {
 	display: flex;
 	flex-direction: row;
@@ -404,6 +427,8 @@ input[type="date"] {
 	justify-content: start;
 	gap: 5px;
 }
+/* Стилизация кнопки */
+
 .registrationBtn {
 	border: 0.5px solid #fff;
 	background: #5a61ed;
@@ -413,6 +438,8 @@ input[type="date"] {
 	font-family: PT Sans;
 	cursor: pointer;
 }
+/* Вызов анимации кнопки */
+
 .registrationBtn.errorBtn {
 	-webkit-animation-name: error-out-on-hover;
 	animation-name: error-out-on-hover;
@@ -423,6 +450,8 @@ input[type="date"] {
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
 }
+/* Стилизация онового изображения аватара */
+
 .back__avatar {
 	width: 411px;
 	height: 411px;

@@ -1,4 +1,6 @@
 @media screen and (max-width: 400px) {
+	/* Адаптивка для экранов шириной менее 400зч */
+
 	* {
 		font-size: 10px !important;
 	}
